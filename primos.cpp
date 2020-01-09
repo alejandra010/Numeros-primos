@@ -5,7 +5,7 @@
 
 void hilo(){
 	std::ofstream outfile("alejandra.txt");
-	outfile<<"Hola Mundo"<< std::endl <<"Alejandra"<<std::endl;
+	outfile<<"-------> EJERCICIO <-------"<< std::endl <<"Hola Mundo"<<std::endl <<"Alejandra"<<std::endl <<"-------> EJERCICIO <-------"<<std::endl; 
 	outfile.close();
 }
 int main(){
@@ -23,9 +23,14 @@ if(num%i==0)
 contador++;
 }
 if(contador==2)
+{
 printf("\n El numero que ingreso es primo");
 std::thread prueba(hilo);
 prueba.join();
+}
+else 
+printf("\n El numero que ingreso no es primo")
 getch();
 }
+
 
